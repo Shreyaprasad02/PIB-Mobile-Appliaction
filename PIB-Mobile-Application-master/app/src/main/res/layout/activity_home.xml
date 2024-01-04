@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:layout_marginBottom="50sp"
+    android:background="@color/white"
+tools:context=".HomeActivity">
+
+
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_marginTop="0dp"
+    android:background="@color/Theme">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/emblem_image"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+
+            app:srcCompat="@drawable/emblem"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/emblem_image"
+            android:layout_marginStart="58dp"
+            android:layout_marginLeft="108dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toEndOf="@+id/emblem_image"
+            android:text="Press Information Bureau"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/emblem_image"
+            android:text="Government of India"></TextView>
+
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/middlebar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@id/toolbar"
+        android:background="@color/white"
+        android:backgroundTint="@color/white">
+
+        <Spinner
+            android:id="@+id/region"
+            android:layout_width="209dp"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="7dp"
+            android:foregroundTint="@color/black"
+            android:layout_toStartOf="@+id/language"
+            android:popupBackground="@color/white"
+            android:background="@drawable/spinner_bg"
+            android:entries="@array/spinnerItems"></Spinner>
+
+        <Spinner
+            android:id="@+id/language"
+            android:layout_width="119dp"
+            android:layout_height="39dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/spinner_bg"
+            android:popupBackground="@color/white"
+            android:textAlignment="textStart"
+            android:textDirection="firstStrongRtl"></Spinner>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/middlebar"
+        >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rvProgram"
+            />
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsActivity"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/ministry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ministry"
+        android:textSize="20sp"
+        android:background="@drawable/nav_bg"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/Posted_by"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/ministry"
+        android:text="Posted By"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Posted_by"
+        android:padding="10sp">
+        <TextView
+            android:id="@+id/matter"
+            android:layout_below="@+id/Posted_by"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="matter"
+            />
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

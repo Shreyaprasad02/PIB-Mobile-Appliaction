@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerItems">
+        <item>PIB Delhi</item>
+        <item>PIB Mumbai</item>
+        <item>PIB Hyderabad</item>
+        <item>PIB Chennai</item>
+        <item>PIB Chandigarh</item>
+        <item>PIB Kolkata</item>
+        <item>PIB Bengaluru</item>
+        <item>PIB Bhubaneshwar</item>
+        <item>PIB Ahmedabad</item>
+        <item>PIB Guwahati</item>
+        <item>PIB Thiruvunantpuram</item>
+        <item>PIB Imphal</item>
+
+    </string-array>
+</resources>

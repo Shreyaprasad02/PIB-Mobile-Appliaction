@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Fragment_container"
+        />
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:paddingLeft="30sp"
+        android:layout_alignBottom="@+id/Fragment_container"
+        android:background="@drawable/nav_bg"
+        >
+
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:id="@+id/homepage"/>
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:text="About"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/homepage"
+            android:id="@+id/aboutpage"/>
+
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/aboutpage"
+            android:id="@+id/profilepage"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

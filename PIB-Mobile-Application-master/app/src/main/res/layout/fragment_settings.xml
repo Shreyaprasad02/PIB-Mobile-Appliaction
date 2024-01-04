@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Press Information Bureau"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textFontWeight="900"
+        android:fontFamily="@font/averia_libre_bold"/>
+
+    <ScrollView
+        android:layout_marginBottom="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="20sp"
+            android:padding="10sp"
+            android:lineSpacingExtra="5sp"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Press Information Bureau (PIB) is the nodal agency of the
+Government of India to disseminate information to the print and
+electronic media on government policies, programmes, initiatives and
+achievements. It functions as an interface between the Government
+and the media and also serves to provide feedback to the Government
+on people’s reaction as reflected in the media.
+PIB disseminates information through different modes of
+communication viz. press releases, press notes, feature articles,
+backgrounders, photographs, database available on Bureau’s website.
+Information disseminated is released in English, Hindi and Urdu and
+subsequently translated in other Indian languages to reach out to
+about 8,400 newspapers and media organizations in different parts of
+country.
+In addition PIB organizes Press Conferences, Press Briefing,
+Interviews of the Minister’s /Secretary’s and other senior officers for
+sensitizing media persons on important policy initiatives of the
+Government. The Bureau also conducts Press Tours to successful
+project sites to enable media to have first hand account of
+developmental activities going on in the country."
+            android:textColor="@color/black"
+            />
+
+    </ScrollView>
+
+
+
+</LinearLayout>
